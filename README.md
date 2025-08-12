@@ -1,6 +1,7 @@
 # Maven Central Criticality Analysis
 
-This project performs a criticality analysis of Maven Central packages using PageRank, Transitive Dependency Size (TDS), and Freshness metrics.
+This project performs a criticality analysis of Maven Central packages using PageRank, Transitive Dependency Size (TDS), and Freshness metrics.  
+
 
 ## Features
 
@@ -98,6 +99,9 @@ The notebook automatically handles data download and preprocessing. Simply run t
 This project is for academic and research purposes.
 
 ## Citation
+the original dataset was obtained from:
+Jaime, Damien et al.
+Goblin: A Framework For Enriching And Querying the Maven Central Dependency Graph (https://doi.org/10.1145/3643991.3644879) - 21st International Conference on Mining Software Repositories (MSR'24).
 
 ```bibtex
 @misc{maven_central_analysis,
