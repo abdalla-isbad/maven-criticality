@@ -94,6 +94,29 @@ The notebook automatically handles data download and preprocessing. Simply run t
 - Ensure you're using Python 3.8+
 - Try upgrading pip: `pip install --upgrade pip`
 
+##Neo4j Database Setup
+A prebuilt Neo4j database dump of the Release-to-Release graph is provided via Zenodo for fast setup.
+You can load it locally using the included Graph/db_setup.py script or OS specific setup files.
+
+##Usage:
+
+# Linux / macOS
+python Graph/db_setup.sh
+
+# Windows
+Graph\db_setup.exe
+
+# All
+python Graph/db_setup.py
+
+This will:
+
+Download the dump from Zenodo
+
+Create a Neo4j container with APOC and GDS plugins
+
+Load the database for immediate use at http://localhost:7474 (default credentials: neo4j/password)
+
 ## License
 
 This project is for academic and research purposes.
