@@ -102,7 +102,7 @@ This project is for academic and research purposes.
 ```bibtex
 @misc{maven_central_analysis,
   title={Maven Central Criticality Analysis},
-  author={Abdalla Isbad},
+  author={Abdalla Babiker},
   year={2024},
   url={https://github.com/abdalla-isbad/maven-criticality}
 }
