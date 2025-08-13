@@ -85,7 +85,7 @@ The notebook automatically handles data download and preprocessing. Simply run t
 ## System Requirements
 
 - **RAM**: Minimum 10GB (16GB recommended)
-- **Storage**: ~2GB free space (including virtual environment and data)
+- **Storage**: ~2GB free space (including virtual environment and data) for experiments ~60GB for Database
 - **Internet**: Required for initial data download from Zenodo
 
 
@@ -94,21 +94,25 @@ The notebook automatically handles data download and preprocessing. Simply run t
 - Ensure you're using Python 3.8+
 - Try upgrading pip: `pip install --upgrade pip`
 
-##Neo4j Database Setup
+## Neo4j Database Setup
 A prebuilt Neo4j database dump of the Release-to-Release graph is provided via Zenodo for fast setup.
 You can load it locally using the included Graph/db_setup.py script or OS specific setup files.
 
-##Usage:
+## Usage:
 
-# Linux / macOS
-python Graph/db_setup.sh
-
-# Windows
+**Linux / macOS**:
+   ```bash
+   python Graph/db_setup.sh
+   ```
+**Windows**
+```bash
 Graph\db_setup.exe
+```
 
-# All
+**All**
+```bash
 python Graph/db_setup.py
-
+```
 This will:
 
 Download the dump from Zenodo
